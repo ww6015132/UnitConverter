@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+
+            <EditText
+                android:id="@+id/input_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorHighlight="@color/white"
+                android:descendantFocusability="blocksDescendants"
+                android:hint="Input" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <NumberPicker
+            android:id="@+id/numberpicker_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:editable="false" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="="
+        android:background="@android:color/holo_green_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+
+            <EditText
+                android:id="@+id/output_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorHighlight="@color/white"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Result" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <NumberPicker
+            android:id="@+id/result_unit_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:editable="false" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
