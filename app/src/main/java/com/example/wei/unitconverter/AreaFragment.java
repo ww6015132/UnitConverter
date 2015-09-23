@@ -56,6 +56,8 @@ public class AreaFragment extends Fragment implements NumberPicker.OnValueChange
             public void afterTextChanged(Editable editable) {
                 if (mInputArea.getText() != null&&!mInputArea.getText().toString().equals("")) {
                     transferAreaUnit();
+                }else {
+                    mOutputArea.setText("");
                 }
             }
         });
@@ -107,7 +109,6 @@ public class AreaFragment extends Fragment implements NumberPicker.OnValueChange
     public void onValueChange(NumberPicker numberPicker, int i, int i1) {
         if (mInputArea.getText() != null&&!mInputArea.getText().toString().equals("")) {
             transferAreaUnit();
-
         }
     }
 

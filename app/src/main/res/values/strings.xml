@@ -1,6 +1,24 @@
 <resources>
     <string name="app_name">Unit Converter</string>
 
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string-array name="length_unit">
+        <item>um</item>
+        <item>mm</item>
+        <item>cm</item>
+        <item>dm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>in</item>
+        <item>ft</item>
+        <item>yd</item>
+        <item>fm</item>
+        <item>fur</item>
+        <item>mi</item>
+        <item>nmi</item>
+
+    </string-array>
+
+
 </resources>
