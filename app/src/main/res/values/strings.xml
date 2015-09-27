@@ -19,6 +19,13 @@
         <item>nmi</item>
 
     </string-array>
+    <string-array name="temp_unit">
+        <item>\u2103</item>
+        <item>\u2109</item>
+        <item>\u00B0Re</item>
+        <item>K</item>
+        <item>\u00B0R</item>
+    </string-array>
 
 
 </resources>
