@@ -27,5 +27,19 @@
         <item>\u00B0R</item>
     </string-array>
 
+    <string-array name="volumn_unit">
+        <item>mm³</item>
+        <item>cm³</item>
+        <item>dm³</item>
+        <item>m³</item>
+        <item>uk ga</item>
+        <item>us gal</item>
+        <item>ml</item>
+        <item>l</item>
+        <item>cu in</item>
+        <item>cu ft</item>
+        <item>hl</item>
+
+    </string-array>
 
 </resources>

@@ -67,14 +67,14 @@ public class AreaFragment extends Fragment implements NumberPicker.OnValueChange
         mInputUnitPicker.setMinValue(0);
         mInputUnitPicker.setMaxValue(9);
         mInputUnitPicker.setDisplayedValues(mAreaUnit);
-        setNumberPickerTextColor(mInputUnitPicker, Color.YELLOW);
+        setNumberPickerTextColor(mInputUnitPicker,Color.GREEN);
         mInputUnitPicker.setOnValueChangedListener(this);
 
         mResultUnitPicker = (NumberPicker) view.findViewById(R.id.result_unit_area);
         mResultUnitPicker.setMinValue(0);
         mResultUnitPicker.setMaxValue(9);
         mResultUnitPicker.setDisplayedValues(mAreaUnit);
-        setNumberPickerTextColor(mResultUnitPicker, Color.YELLOW);
+        setNumberPickerTextColor(mResultUnitPicker,Color.GREEN);
         mResultUnitPicker.setOnValueChangedListener(this);
 
         return view;
@@ -104,6 +104,8 @@ public class AreaFragment extends Fragment implements NumberPicker.OnValueChange
         }
         return false;
     }
+
+
 
     @Override
     public void onValueChange(NumberPicker numberPicker, int i, int i1) {

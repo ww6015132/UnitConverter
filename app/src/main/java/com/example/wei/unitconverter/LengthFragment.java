@@ -59,14 +59,14 @@ public class LengthFragment extends Fragment implements NumberPicker.OnValueChan
         mInputUnitPicker.setMinValue(0);
         mInputUnitPicker.setMaxValue(12);
         mInputUnitPicker.setDisplayedValues(mLengthUnit);
-        AreaFragment.setNumberPickerTextColor(mInputUnitPicker, Color.YELLOW);
+        AreaFragment.setNumberPickerTextColor(mInputUnitPicker, Color.GREEN);
         mInputUnitPicker.setOnValueChangedListener(this);
 
         mResultUnitPicker = (NumberPicker) view.findViewById(R.id.result_unit_area);
         mResultUnitPicker.setMinValue(0);
         mResultUnitPicker.setMaxValue(12);
         mResultUnitPicker.setDisplayedValues(mLengthUnit);
-        AreaFragment.setNumberPickerTextColor(mResultUnitPicker, Color.YELLOW);
+        AreaFragment.setNumberPickerTextColor(mResultUnitPicker, Color.GREEN);
         mResultUnitPicker.setOnValueChangedListener(this);
 
 

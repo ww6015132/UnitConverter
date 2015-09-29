@@ -62,14 +62,14 @@ public class TemperatureFragment extends Fragment implements NumberPicker.OnValu
         mInputUnitPicker.setMinValue(0);
         mInputUnitPicker.setMaxValue(4);
         mInputUnitPicker.setDisplayedValues(mTempUnit);
-        AreaFragment.setNumberPickerTextColor(mInputUnitPicker, Color.YELLOW);
+        AreaFragment.setNumberPickerTextColor(mInputUnitPicker, Color.GREEN);
         mInputUnitPicker.setOnValueChangedListener(this);
 
         mResultUnitPicker = (NumberPicker) view.findViewById(R.id.result_unit_area);
         mResultUnitPicker.setMinValue(0);
         mResultUnitPicker.setMaxValue(4);
         mResultUnitPicker.setDisplayedValues(mTempUnit);
-        AreaFragment.setNumberPickerTextColor(mResultUnitPicker, Color.YELLOW);
+        AreaFragment.setNumberPickerTextColor(mResultUnitPicker, Color.GREEN);
         mResultUnitPicker.setOnValueChangedListener(this);
 
         return view;
