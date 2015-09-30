@@ -407,6 +407,7 @@ public class VolumeFragment extends Fragment implements NumberPicker.OnValueChan
                     mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0001639)));
                 }
             }
+
             //cu ft to *
             if (mInputUnitPicker.getValue() == 9) {
                 if (mResultUnitPicker.getValue() == 0) {
