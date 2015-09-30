@@ -152,92 +152,8 @@ public class VolumeFragment extends Fragment implements NumberPicker.OnValueChan
                     mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (1e-5)));
                 }
             }
-            //cm to *
+
             if (mInputUnitPicker.getValue() == 2) {
-                if (mResultUnitPicker.getValue() == 0) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 10000));
-                }
-                if (mResultUnitPicker.getValue() == 1) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 10));
-                }
-                if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(mInputArea.getText());
-                }
-                if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.1));
-                }
-                if (mResultUnitPicker.getValue() == 4) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.01));
-                }
-                if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.00001));
-                }
-                if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.3937008));
-                }
-                if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.0328084));
-                }
-                if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0109361)));
-                }
-                if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0054681)));
-                }
-                if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0000497)));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (6.2137e-6)));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (5.3996e-6)));
-                }
-            }
-            //dm to *
-            if (mInputUnitPicker.getValue() == 3) {
-                if (mResultUnitPicker.getValue() == 0) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 100000));
-                }
-                if (mResultUnitPicker.getValue() == 1) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 100));
-                }
-                if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 10));
-                }
-                if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(mInputArea.getText());
-                }
-                if (mResultUnitPicker.getValue() == 4) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.1));
-                }
-                if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.0001));
-                }
-                if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 3.937008));
-                }
-                if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.328084));
-                }
-                if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.109361)));
-                }
-                if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.054681)));
-                }
-                if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.000497)));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (6.2137e-6) * 10));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (5.3996e-6) * 10));
-                }
-            }
-            //m to *
-            if (mInputUnitPicker.getValue() == 4) {
                 if (mResultUnitPicker.getValue() == 0) {
                     mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000000));
                 }
@@ -245,43 +161,35 @@ public class VolumeFragment extends Fragment implements NumberPicker.OnValueChan
                     mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000));
                 }
                 if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 100));
-                }
-                if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 10));
-                }
-                if (mResultUnitPicker.getValue() == 4) {
                     mOutputArea.setText(mInputArea.getText());
                 }
-                if (mResultUnitPicker.getValue() == 5) {
+                if (mResultUnitPicker.getValue() == 3) {
                     mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.001));
                 }
+                if (mResultUnitPicker.getValue() == 4) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.2199692));
+                }
+                if (mResultUnitPicker.getValue() == 5) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.2641721));
+                }
                 if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 39.37008));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000));
                 }
                 if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 3.28084));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString())));
                 }
                 if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (1.09361)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (61.0238445)));
                 }
                 if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.54681)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0353147)));
                 }
                 if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.00497)));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (6.2137e-6) * 100));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (5.3996e-6) * 100));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.01)));
                 }
             }
-
-            //km to x
-
-            if (mInputUnitPicker.getValue() == 5) {
+            //m3 to *
+            if (mInputUnitPicker.getValue() == 3) {
                 if (mResultUnitPicker.getValue() == 0) {
                     mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000000000));
                 }
@@ -289,335 +197,287 @@ public class VolumeFragment extends Fragment implements NumberPicker.OnValueChan
                     mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000000));
                 }
                 if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 100000));
-                }
-                if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 10000));
-                }
-                if (mResultUnitPicker.getValue() == 4) {
                     mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000));
                 }
-                if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(mInputArea.getText());
-                }
-                if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 39370.08));
-                }
-                if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 3280.84));
-                }
-                if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (1093.61)));
-                }
-                if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (546.81)));
-                }
-                if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (4.97)));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (6.2137e-6) * 100000));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (5.3996e-6) * 100000));
-                }
-            }
-            //in to *
-            if (mInputUnitPicker.getValue() == 6) {
-                if (mResultUnitPicker.getValue() == 0) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 25400));
-                }
-                if (mResultUnitPicker.getValue() == 1) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 25.4));
-                }
-                if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 2.54));
-                }
                 if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.254)));
+                    mOutputArea.setText(mInputArea.getText());
                 }
                 if (mResultUnitPicker.getValue() == 4) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0254)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 219.9691573));
                 }
                 if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0000254)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 264.1720524));
                 }
                 if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(mInputArea.getText());
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000000));
                 }
                 if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.0833333));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000));
                 }
                 if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0277778)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (61023.8445022)));
                 }
                 if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0138889)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (35.3147248)));
                 }
                 if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0001263)));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0000158)));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0000137)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (10)));
                 }
             }
-            //ft to *
-            if (mInputUnitPicker.getValue() == 7) {
+            //uk ga to *
+            if (mInputUnitPicker.getValue() == 4) {
                 if (mResultUnitPicker.getValue() == 0) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 304800));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 4546091.88));
                 }
                 if (mResultUnitPicker.getValue() == 1) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 304.8));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 4546.09188));
                 }
                 if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 30.48));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 4.5460919));
                 }
                 if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (3.048)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.0045461));
                 }
                 if (mResultUnitPicker.getValue() == 4) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.3048)));
-                }
-                if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0003048)));
-                }
-                if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (12)));
-                }
-                if (mResultUnitPicker.getValue() == 7) {
                     mOutputArea.setText(mInputArea.getText());
                 }
+                if (mResultUnitPicker.getValue() == 5) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1.2009504));
+                }
+                if (mResultUnitPicker.getValue() == 6) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 4546.09188));
+                }
+                if (mResultUnitPicker.getValue() == 7) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 4.5460919));
+                }
                 if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.3333333)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (277.420004)));
                 }
                 if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.1666667)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.160544)));
                 }
                 if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0015152)));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0001894)));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0001646)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0454609)));
                 }
             }
 
-            //yd to *
-            if (mInputUnitPicker.getValue() == 8) {
+            //us gal to x
+
+            if (mInputUnitPicker.getValue() == 5) {
                 if (mResultUnitPicker.getValue() == 0) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 914400));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 3785411.784));
                 }
                 if (mResultUnitPicker.getValue() == 1) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 914.4));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 3785.411784));
                 }
                 if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 91.44));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 3.7854118));
                 }
                 if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (9.144)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.0037854));
                 }
                 if (mResultUnitPicker.getValue() == 4) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.9144)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.8326738));
                 }
                 if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0009144)));
+                    mOutputArea.setText(mInputArea.getText());
                 }
                 if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (36)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 3785.411784));
                 }
                 if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (3)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 3.7854118));
+                }
+                if (mResultUnitPicker.getValue() == 8) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (231.0003801)));
+                }
+                if (mResultUnitPicker.getValue() == 9) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.1336808)));
+                }
+                if (mResultUnitPicker.getValue() == 10) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0378541)));
+                }
+            }
+            //ml to *
+            if (mInputUnitPicker.getValue() == 6) {
+                if (mResultUnitPicker.getValue() == 0) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000));
+                }
+                if (mResultUnitPicker.getValue() == 1) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1));
+                }
+                if (mResultUnitPicker.getValue() == 2) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.001));
+                }
+                if (mResultUnitPicker.getValue() == 3) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.000001)));
+                }
+                if (mResultUnitPicker.getValue() == 4) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.00022)));
+                }
+                if (mResultUnitPicker.getValue() == 5) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0002642)));
+                }
+                if (mResultUnitPicker.getValue() == 6) {
+                    mOutputArea.setText(mInputArea.getText());
+                }
+                if (mResultUnitPicker.getValue() == 7) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.001));
+                }
+                if (mResultUnitPicker.getValue() == 8) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0610238)));
+                }
+                if (mResultUnitPicker.getValue() == 9) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0000353)));
+                }
+                if (mResultUnitPicker.getValue() == 10) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.00001)));
+                }
+            }
+            //l to *
+            if (mInputUnitPicker.getValue() == 7) {
+                if (mResultUnitPicker.getValue() == 0) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000000));
+                }
+                if (mResultUnitPicker.getValue() == 1) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1000));
+                }
+                if (mResultUnitPicker.getValue() == 2) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1));
+                }
+                if (mResultUnitPicker.getValue() == 3) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.001)));
+                }
+                if (mResultUnitPicker.getValue() == 4) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.2199692)));
+                }
+                if (mResultUnitPicker.getValue() == 5) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.2641721)));
+                }
+                if (mResultUnitPicker.getValue() == 6) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (1000)));
+                }
+                if (mResultUnitPicker.getValue() == 7) {
+                    mOutputArea.setText(mInputArea.getText());
+                }
+                if (mResultUnitPicker.getValue() == 8) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (61.0238445)));
+                }
+                if (mResultUnitPicker.getValue() == 9) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0353147)));
+                }
+                if (mResultUnitPicker.getValue() == 10) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.01)));
+                }
+            }
+
+            //cu in to *
+            if (mInputUnitPicker.getValue() == 8) {
+                if (mResultUnitPicker.getValue() == 0) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 16387.037037));
+                }
+                if (mResultUnitPicker.getValue() == 1) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 16.387037));
+                }
+                if (mResultUnitPicker.getValue() == 2) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.016387));
+                }
+                if (mResultUnitPicker.getValue() == 3) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0000164)));
+                }
+                if (mResultUnitPicker.getValue() == 4) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0036046)));
+                }
+                if (mResultUnitPicker.getValue() == 5) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.004329)));
+                }
+                if (mResultUnitPicker.getValue() == 6) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (16.387037)));
+                }
+                if (mResultUnitPicker.getValue() == 7) {
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.016387)));
                 }
                 if (mResultUnitPicker.getValue() == 8) {
                     mOutputArea.setText(mInputArea.getText());
                 }
                 if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.5)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0005787)));
                 }
                 if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0045455)));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0005682)));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0004937)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0001639)));
                 }
             }
-            //fm to *
+            //cu ft to *
             if (mInputUnitPicker.getValue() == 9) {
                 if (mResultUnitPicker.getValue() == 0) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1828800));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 28316800));
                 }
                 if (mResultUnitPicker.getValue() == 1) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1828.8));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 28316.8));
                 }
                 if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 182.88));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 28.3168));
                 }
                 if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (18.288)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0283168)));
                 }
                 if (mResultUnitPicker.getValue() == 4) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (1.8288)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (6.2288226)));
                 }
                 if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.0018288)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (7.4805072)));
                 }
                 if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (72)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (28316.8)));
                 }
                 if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (6)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (28.3168)));
                 }
                 if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 2));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1728));
                 }
                 if (mResultUnitPicker.getValue() == 9) {
                     mOutputArea.setText((mInputArea.getText()));
                 }
                 if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.0090909));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.0011364));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.0009875));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.283168));
                 }
             }
             //fur to *
             if (mInputUnitPicker.getValue() == 10) {
                 if (mResultUnitPicker.getValue() == 0) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 201168000));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 100000000));
                 }
                 if (mResultUnitPicker.getValue() == 1) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 201168));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 100000));
                 }
                 if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 20116.8));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 100));
                 }
                 if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (2011.68)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.1)));
                 }
                 if (mResultUnitPicker.getValue() == 4) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (201.168)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (21.9969157)));
                 }
                 if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (0.201168)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (26.4172052)));
                 }
                 if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (7920)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (100000)));
                 }
                 if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (660)));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (100)));
                 }
                 if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 220));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 6102.3844502));
                 }
                 if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 110));
+                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 3.5314725));
                 }
                 if (mResultUnitPicker.getValue() == 10) {
                     mOutputArea.setText(mInputArea.getText());
                 }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.125));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.108622));
-                }
             }
-            //mi to *
-            if (mInputUnitPicker.getValue() == 11) {
-                if (mResultUnitPicker.getValue() == 0) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1609344000));
-                }
-                if (mResultUnitPicker.getValue() == 1) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1609344));
-                }
-                if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 160934.4));
-                }
-                if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (16093.44)));
-                }
-                if (mResultUnitPicker.getValue() == 4) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (1609.344)));
-                }
-                if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (1.609344)));
-                }
-                if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (63360)));
-                }
-                if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (5280)));
-                }
-                if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1760));
-                }
-                if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 880));
-                }
-                if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 8));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText((mInputArea.getText()));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 0.8689762));
-                }
-            }
-            //nmi to *
-            if (mInputUnitPicker.getValue() == 12) {
-                if (mResultUnitPicker.getValue() == 0) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1852000000));
-                }
-                if (mResultUnitPicker.getValue() == 1) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1852000));
-                }
-                if (mResultUnitPicker.getValue() == 2) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 185200));
-                }
-                if (mResultUnitPicker.getValue() == 3) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (18520)));
-                }
-                if (mResultUnitPicker.getValue() == 4) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (1852)));
-                }
-                if (mResultUnitPicker.getValue() == 5) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (1.852)));
-                }
-                if (mResultUnitPicker.getValue() == 6) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (72913.3858268)));
-                }
-                if (mResultUnitPicker.getValue() == 7) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * (6076.1154856)));
-                }
-                if (mResultUnitPicker.getValue() == 8) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 2025.3718285));
-                }
-                if (mResultUnitPicker.getValue() == 9) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1012.6859143));
-                }
-                if (mResultUnitPicker.getValue() == 10) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 9.2062356));
-                }
-                if (mResultUnitPicker.getValue() == 11) {
-                    mOutputArea.setText(String.valueOf(Double.parseDouble(mInputArea.getText().toString()) * 1.1507794));
-                }
-                if (mResultUnitPicker.getValue() == 12) {
-                    mOutputArea.setText(mInputArea.getText());
-                }
-            }
-
-
     }
 }
